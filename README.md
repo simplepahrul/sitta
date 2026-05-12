@@ -1,6 +1,6 @@
 # SISTEM INFORMASI TIRAS DAN TRANSAKSI BAHAN AJAR (SITTA)
 
-Sistem informasi berbasis web untuk simulasi pengelolaan tiras dan transaksi bahan ajar menggunakan data dummy (frontend-only).
+Sistem informasi berbasis web untuk simulasi pengelolaan tiras dan transaksi bahan ajar.
 
 ---
 
