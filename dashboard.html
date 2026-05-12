@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard SITTA</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row min-vh-100">
+        <!-- Sidebar -->
+
+        <div class="col-lg-2 sidebar p-4">
+          <div>
+            <div class="d-flex align-items-center gap-2 mb-4">
+              <img
+                src="https://www.ut.ac.id/wp-content/uploads/2015/11/logo-ut-small-transparent-300x226.png"
+                class="sidebar-logo"
+              />
+
+              <div>
+                <h4 class="mb-0">SITTA</h4>
+                <small>Dashboard Akademik</small>
+              </div>
+            </div>
+
+            <div class="nav flex-column gap-2">
+              <a href="dashboard.html" class="sidebar-link"> 🏠 Dashboard </a>
+
+              <a href="stok.html" class="sidebar-link">
+                📚 Informasi Bahan Ajar
+              </a>
+
+              <a href="tracking.html" class="sidebar-link">
+                🚚 Tracking Pengiriman
+              </a>
+            </div>
+          </div>
+
+          <button id="themeToggle" class="btn btn-light mt-4">
+            🌙 Dark Mode
+          </button>
+        </div>
+
+        <!-- Main -->
+
+        <div class="col-lg-10 p-4">
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <!-- kiri -->
+            <div>
+              <h2 id="greeting"></h2>
+              <p class="text-secondary mb-0">
+                Selamat datang di dashboard SITTA ✨
+              </p>
+            </div>
+
+            <!-- kanan atas -->
+            <div class="ms-auto">
+              <button
+                class="btn btn-outline-danger btn-sm d-flex align-items-center gap-2 shadow-sm"
+                onclick="logoutUser()"
+              >
+                🚪 Logout
+              </button>
+            </div>
+          </div>
+
+          <!-- STATISTIK DASHBOARD -->
+
+          <div class="row g-3 mb-4">
+            <!-- BAHAN AJAR -->
+            <div class="col-md-3 col-6">
+              <div class="card text-center shadow-sm border-0 p-3">
+                <h6 class="text-primary">📚 Bahan Ajar</h6>
+                <h3 id="cardBahan">0</h3>
+              </div>
+            </div>
+
+            <!-- TOTAL STOK -->
+            <div class="col-md-3 col-6">
+              <div class="card text-center shadow-sm border-0 p-3">
+                <h6 class="text-success">📦 Total Stok</h6>
+                <h3 id="cardStok">0</h3>
+              </div>
+            </div>
+
+            <!-- TRACKING -->
+            <div class="col-md-3 col-6">
+              <div class="card text-center shadow-sm border-0 p-3">
+                <h6 class="text-warning">🚚 Tracking</h6>
+                <h3 id="cardTracking">0</h3>
+              </div>
+            </div>
+
+            <!-- USER -->
+            <div class="col-md-3 col-6">
+              <div class="card text-center shadow-sm border-0 p-3">
+                <h6 class="text-danger">👤 User</h6>
+                <h3 id="cardUser">0</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+              <div class="card dashboard-card h-100">
+                <div class="card-body">
+                  <h5>📘 Informasi Bahan Ajar</h5>
+                  <p>Kelola stok dan data bahan ajar.</p>
+                  <a href="stok.html" class="btn btn-primary"> Buka Menu </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card dashboard-card h-100">
+                <div class="card-body">
+                  <h5>🚚 Tracking Pengiriman</h5>
+                  <p>Cek status pengiriman delivery order.</p>
+                  <a href="tracking.html" class="btn btn-primary"> Lacak </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card dashboard-card h-100">
+                <div class="card-body">
+                  <h5>📊 Monitoring Progress DO</h5>
+                  <p>Pantau distribusi bahan ajar.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card dashboard-card h-100">
+                <div class="card-body">
+                  <h5>🧾 Rekap Bahan Ajar</h5>
+
+                  <p>Ringkasan stok dan transaksi bahan ajar.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="card dashboard-card h-100">
+                <div class="card-body">
+                  <h5>📜 Histori Transaksi</h5>
+
+                  <p>Riwayat pengiriman dan transaksi bahan ajar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        loadCardsDashboard();
+      });
+    </script>
+  </body>
+</html>

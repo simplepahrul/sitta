@@ -1,0 +1,24 @@
+author: M. Pahrul Amri - 054118657
+
+struktur:
+sitta/
+    index.html (login)
+    dashboard.html
+    stok.html
+    tracking.html
+
+    css/
+        style.css
+
+    js/
+        data.js
+        script.js
+
+    assets/
+        img/
+
+note:
+html
+css
+javascript
+bootstrap

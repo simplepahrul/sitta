@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Tracking SITTA</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <div
+        class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"
+      >
+        <div>
+          <h2>🚚 Tracking Pengiriman</h2>
+          <p class="text-secondary mb-0">
+            Cek status pengiriman delivery order
+          </p>
+        </div>
+
+        <a href="dashboard.html" class="btn btn-outline-primary">
+          ← Dashboard
+        </a>
+      </div>
+
+      <div class="card border-0 shadow-sm p-3 mb-4">
+        <div class="d-flex flex-wrap align-items-center gap-3">
+          <input
+            type="text"
+            id="nomorDO"
+            class="form-control w-auto flex-grow-1"
+            placeholder="Masukkan Nomor Delivery Order"
+          />
+
+          <button onclick="cariTracking()" class="btn btn-primary px-4 ms-auto">
+            Cari
+          </button>
+        </div>
+        <small class="text-muted mt-2"> Contoh : 2023001234, 2023005678 </small>
+      </div>
+
+      <div id="hasilTracking"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
