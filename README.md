@@ -72,3 +72,9 @@ Pengembangan dilakukan dengan pendekatan bertahap untuk memastikan sistem tetap 
 SITTA diharapkan dapat menjadi contoh implementasi sistem informasi sederhana yang efektif dalam mendukung proses administrasi pendidikan.
 
 ---
+
+> “Talk is cheap. Show me the code.”  
+> — Linus Torvalds
+
+> “Stay hard.”  
+> — David Goggins
